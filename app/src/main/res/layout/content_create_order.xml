@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/lightBlue"
+        android:id="@+id/relativeLayout">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:text="返回"
+            android:id="@+id/order_button_back"
+            android:textColor="@color/white"
+            android:background="@color/touming"
+            />
+        <TextView
+            android:text="创建订单"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="12dp"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/order_create_layout"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择加油站位置："
+            android:textSize="25sp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:entries="@array/books"
+            android:id="@+id/gas_station_spinner"
+            ></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择汽油:"
+            android:textSize="25sp"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:entries="@array/gas"
+            android:id="@+id/gas_kind_spinner"
+            ></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数量:"
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="输入汽油量"
+            android:id="@+id/edittext_number_gas"
+            android:textColorHint="@color/backgroundGray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="总价:"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="0元"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="创建订单"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/order_create_layout"
+        android:id="@+id/create_order_button"
+        android:background="@color/buttonGray"/>
+
+</RelativeLayout>

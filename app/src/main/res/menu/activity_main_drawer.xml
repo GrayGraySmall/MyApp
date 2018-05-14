@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_car"
+            android:title="切换车辆"
+            android:icon="@drawable/ic_swap_horiz"/>
+        <item
+            android:id="@+id/nav_speak"
+            android:title="语音助手"
+            android:icon="@drawable/ic_mic_none"/>
+        <item
+            android:id="@+id/nav_driving"
+            android:icon="@drawable/user_car"
+            android:title="驾驶状态" />
+        <!--<item android:id="@+id/nav_order" android:icon="@drawable/user_order" android:title="订单查询" />-->
+        <item
+            android:id="@+id/nav_police"
+            android:icon="@drawable/user_police"
+            android:title="违章查询" />
+        <item
+            android:id="@+id/nav_manager_car"
+            android:title="车辆管理"
+            />
+
+    </group>
+
+    <item android:title="其它">
+        <menu>
+            <item
+                android:id="@+id/nav_set"
+                android:icon="@drawable/ic_action_gear"
+                android:title="设置" />
+            <item
+                android:id="@+id/nav_quit"
+                android:icon="@drawable/user_quit"
+                android:title="退出" />
+        </menu>
+    </item>
+
+</menu>

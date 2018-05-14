@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray">>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/lightBlue"
+        android:id="@+id/relativeLayout2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_format_list_bulleted_black_24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:text="我的"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="12dp"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/relativeLayout2">
+
+
+        <LinearLayout
+            android:id="@+id/id_ly_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <ImageView
+                android:src="@drawable/touxiang"
+                android:layout_width="107dp"
+                android:layout_height="71dp"
+                android:layout_margin="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/id_text_user_nicheng"
+                    android:layout_marginTop="10dp"
+                    android:text="昵称"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/id_text_user_username"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:text="142062910127"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageButton
+                android:src="@drawable/right"
+                android:layout_marginLeft="75dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/touming"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_carControl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/user_car"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/id_btn_carControl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/touming"
+                android:clickable="false"
+                android:text="车辆管理"/>
+            <ImageView
+                android:src="@drawable/right"
+                android:layout_marginLeft="200dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_order"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/user_order"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/id_btn_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/touming"
+                android:clickable="false"
+                android:text="订单查询"/>
+            <ImageView
+                android:src="@drawable/right"
+                android:layout_marginLeft="200dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_rules"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/user_police"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/id_btn_rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/touming"
+                android:clickable="false"
+                android:text="违章查询"/>
+            <ImageView
+                android:src="@drawable/right"
+                android:layout_marginLeft="200dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_setting"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/user_setting"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/id_btn_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/touming"
+                android:clickable="false"
+                android:text="设置"/>
+            <ImageView
+                android:src="@drawable/right"
+                android:layout_marginLeft="200dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_quit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/user_quit"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/id_btn_quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/touming"
+                android:clickable="false"
+                android:text="退出"/>
+            <ImageView
+                android:src="@drawable/right"
+                android:layout_marginLeft="200dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

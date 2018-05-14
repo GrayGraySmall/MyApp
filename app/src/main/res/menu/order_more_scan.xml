@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popumenu"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item
+        android:id="@+id/button2"
+        android:title="扫一扫"
+        android:icon="@drawable/ic_keyboard_arrow_down"/>
+
+    <item
+        android:id="@+id/button3"
+        android:title="历史订单"
+        android:actionLayout="@layout/tab_order"
+        android:icon="@drawable/ic_check_box"/>
+</menu >

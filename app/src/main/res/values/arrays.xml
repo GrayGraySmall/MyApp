@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "books">
+        <item>万达附近的加油站</item>
+        <item>武进附近加油站</item>
+        <item>红梅公园附近加油站</item>
+    </string-array>
+
+    <string-array name="gas">
+        <item>90号无铅汽油</item>
+        <item>93号无铅汽油</item>
+        <item>95号汽油</item>
+        <item>柴油</item>
+    </string-array>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/lightBlue">
+        <TextView
+            android:text="车辆"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="12dp"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/id_btn_carinfo_back"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@color/touming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+   <ListView
+       android:id="@+id/id_list_carlist"
+       android:layout_width="match_parent"
+       android:layout_weight="1"
+       android:layout_height="wrap_content">
+   </ListView>
+
+    <Button
+        android:id="@+id/id_btn_carinfo_add"
+        android:text="添加车辆"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>
